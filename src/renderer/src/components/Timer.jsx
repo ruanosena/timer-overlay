@@ -80,7 +80,9 @@ export default function Timer({ isOverlay }) {
 
           <div
             id="timer-buttons"
-            className="text-stone-500 flex justify-center bg-black/10 rounded-xl"
+            className={
+              !isOverlay ? 'text-stone-500 flex justify-center bg-black/10 rounded-xl' : 'hidden'
+            }
           >
             {estaAtivo ? (
               <>

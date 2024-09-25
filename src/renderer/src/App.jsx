@@ -15,9 +15,11 @@ function App() {
 
   return (
     <>
-      <TopBar />
-      <div className="bg-black/40 p-2 rounded-b-xl">
-        <Timer />
+      <div className={!isOverlay ? 'visible' : 'invisible'}>
+        <TopBar />
+      </div>
+      <div className={!isOverlay ? 'bg-black/40 p-2 rounded-b-xl' : 'bg-black/40 p-2 rounded-xl'}>
+        <Timer isOverlay={isOverlay} />
       </div>
     </>
   )
