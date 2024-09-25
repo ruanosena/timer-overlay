@@ -1,4 +1,4 @@
-# pomodoro
+# Timer Overlay
 
 An Electron application with React
 
